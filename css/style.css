@@ -457,6 +457,41 @@ textarea.input {
   display: block;
 }
 
+/* TEXT LOGO */
+.logo-text {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.05;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.logo-text .logo-top {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b5dab;   /* blue */
+}
+
+.logo-text .logo-main {
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  color: #ef233c;   /* red */
+  letter-spacing: 0.5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .logo-text .logo-top {
+    font-size: 20px;
+  }
+
+  .logo-text .logo-main {
+    font-size: 22px;
+  }
+}
+
+
 /*----------------------------*\
 	Search
 \*----------------------------*/
@@ -2241,3 +2276,74 @@ textarea.input {
     margin-top: 10px;
   }
 }
+
+
+
+/* ============================= */
+/* MOBILE HEADER ALIGNMENT FIX   */
+/* ============================= */
+@media (max-width: 767px) {
+
+  /* Make header row flex */
+  #header .row {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Disable float on mobile */
+  .header-logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Center logo properly */
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Push menu toggle to right */
+  .header-ctn,
+  .menu-toggle {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Reduce logo size for mobile */
+  .logo-text .logo-top {
+    font-size: 18px;
+  }
+
+  .logo-text .logo-main {
+    font-size: 20px;
+  }
+  /* OPTIONAL: Hide "Menu" text on mobile (keep hamburger icon only) */
+  @media (max-width: 767px) {
+    .menu-toggle span {
+      display: none;
+    }
+  }
+}
+
+/* Logo tagline */
+.logo-text .logo-tagline {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fdfdfd;          /* light grey for dark header */
+  letter-spacing: 0.6px;
+  
+}
+
+/* Mobile adjustment for tagline */
+@media (max-width: 767px) {
+  .logo-text .logo-tagline {
+    font-size: 11px;
+  }
+}
+
+

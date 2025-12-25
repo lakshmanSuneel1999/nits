@@ -2166,6 +2166,7 @@ textarea.input {
   text-align: left;
   margin-bottom: 20px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .map-container {

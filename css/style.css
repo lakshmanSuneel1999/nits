@@ -1074,6 +1074,14 @@ textarea.input {
   visibility: visible;
 }
 
+/* Existing add-to-cart styles (already present above) */
+
+/* Small fix for anchor wrapping the button */
+.product .add-to-cart .buy-link {
+  display: inline-block;
+}
+
+
 /*----------------------------*\
 	Widget product
 \*----------------------------*/

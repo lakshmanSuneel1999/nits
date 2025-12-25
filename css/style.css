@@ -1081,6 +1081,18 @@ textarea.input {
   display: inline-block;
 }
 
+.product .product-body .product-features {
+  margin: 10px 0 12px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.product .product-body .product-features li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
 
 /*----------------------------*\
 	Widget product
